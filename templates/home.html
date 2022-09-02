@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<h3>Employee Data</h3>
+<body>
+
+<table class='center'>
+    <tr>
+        <th>Employee Name</th>
+        <th>Employee ID</th>
+    </tr>
+
+{% for key, value in emp_details.items %}
+    <tr>
+        <td>{{key}}</td>
+         <td>{{value}}</td>
+    </tr>
+{% endfor %}
+
+</table>
+</body>
+</html>
+
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+ }
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  align:center;
+}
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+</style>
